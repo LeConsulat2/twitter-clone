@@ -5,6 +5,7 @@ import Profile from "./routes/profile"
 import Login from "./routes/login"
 import CreateAccount from "./routes/create-account"
 
+
 function App() {
 
   const router = createBrowserRouter([
@@ -30,7 +31,9 @@ function App() {
       path: "/create-account",
       element: <CreateAccount />,
     }
-  ])
+  ]);
+
+
 
   return (
     <>
