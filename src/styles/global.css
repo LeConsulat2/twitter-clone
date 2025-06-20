@@ -1,1 +1,50 @@
 @import '../tokens/variable.css';
+
+/* Define some CSS variables in your global.css for consistency */
+:root {
+    --color-bg-primary: #f9fbfd;
+    --color-text-primary: #333;
+    --color-text-secondary: #555;
+    --color-primary: #007bff; /* A nice blue */
+    --color-primary-hover: #0056b3;
+    --color-primary-light: #e0f0ff;
+    --color-primary-dark: #004085;
+    --color-accent: #28a745; /* A vibrant green */
+    --color-border: #ddd;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-h1: 40px;
+    --font-size-hero-title: 64px; /* For very large headings */
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+    --transition-fast: 0.15s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+}
+
+/* Animation for page transitions */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--font-size-base);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    animation: fadeIn 0.2s ease-out;
+}
+
